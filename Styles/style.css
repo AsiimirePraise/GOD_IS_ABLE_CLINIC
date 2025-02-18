@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  font-family: "Raleway", serif;
+}
+
+#logo{
+  border-radius: 50%;
+  width: 100px;
+  height:100px;
+  margin-right: 15px;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GOD IS ABLE bookLab</title>
+    <link rel="stylesheet" href="/Styles/style.css" />
+    <link rel="icon" href="/Assets/logo.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="fixed top-0 left-0 right-0 bg-white shadow-md p-4 z-50">
+        <div class="max-w-7xl mx-auto flex items-center">
+          <a href="./index.html" class="flex items-center">
+            <img
+              id="logo"
+              src="/Assets/logo.png"
+              alt="GOD IS ABLE CLINIC Logo"
+              class="h-20"
+            />
+          </a>
+          <div class="flex-1 flex justify-between items-center">
+            <a
+              href="./index.html"
+              class="text-3xl font-bold text-blue-600 hover:text-blue-700 transition-colors"
+            >
+              GOD IS ABLE
+              <span class="block text-xl text-gray-500">CLINIC</span>
+            </a>
+            <!-- Navigation bar -->
+            <div class="flex space-x-8">
+              <a href="./index.html" class="text-gray-800 hover:text-blue-600"
+                >HOME</a
+              >
+              <div class="dropdown dropdown-hover">
+                <a href="./About.html" class="text-gray-800 hover:text-blue-600"
+                  >ABOUT US</a
+                >
+                <ul
+                  class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
+                >
+                  <li><a href="./About.html#Clinics">Clinics</a></li>
+                  <li><a href="./About.html#Doctors">Doctors</a></li>
+                </ul>
+              </div>
+              <div class="dropdown dropdown-hover">
+                <a
+                  href="./Services.html"
+                  class="text-gray-800 hover:text-blue-600"
+                  >SERVICES</a
+                >
+                <ul
+                  class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
+                >
+                  <li><a href="./Services.html#Dental">Dental</a></li>
+                  <li><a href="./Services.html#Lab">Lab</a></li>
+                  <li>
+                    <a href="./Services.html#General">General Treatment</a>
+                  </li>
+                </ul>
+              </div>
+              <a href="./Contact.html" class="text-gray-800 hover:text-blue-600"
+                >CONTACT US</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="relative min-h-screen pt-24">
+      <div
+        class="h-96 bg-cover bg-center flex items-center justify-center"
+        style="background-image: url('/api/placeholder/1920/1080')"
+      >
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="relative text-center z-10">
+          <h1 class="text-4xl font-bold text-white">We treat but GOD heals</h1>
+        </div>
+      </div>
+      <div class="fixed right-4 top-40 bg-white rounded-lg shadow-lg p-6 w-64">
+        <div class="space-y-6">
+          <a href="tel:256 786733562 " class="block">
+            <div
+              class="flex items-center space-x-2 text-blue-600 hover:text-blue-800"
+            >
+              <span>Call for the</span>
+            </div>
+            <span class="text-red-600 font-semibold text-lg">emergency</span>
+          </a>
+          <a href="#" class="block text-blue-600 hover:text-blue-800">
+            <span>Book a Lab Test</span>
+          </a>
+          <a href="./RequestAppointment.html" class="block text-blue-600 hover:text-blue-800">
+            <span>Request an appointment</span>
+          </a>
+          <div
+            class="absolute left-[-220px] top-0 hidden group-hover/services:block"
+          >
+            <ul class="menu bg-white p-2 rounded-box shadow-lg w-52">
+              <li><a href="./Services.html#Dental">Dental</a></li>
+              <li><a href="./Services.html#Lab">Lab</a></li>
+              <li><a href="./Services.html#General">General Treatment</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
