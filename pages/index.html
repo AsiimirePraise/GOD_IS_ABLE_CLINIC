@@ -71,14 +71,74 @@
         </div>
       </nav>
     </header>
+    <!-- main content -->
     <main class="relative min-h-screen pt-24">
-      <div
-        class="h-96 bg-cover bg-center flex items-center justify-center"
-        style="background-image: url('/api/placeholder/1920/1080')"
-      >
-        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-        <div class="relative text-center z-10">
-          <h1 class="text-4xl font-bold text-white">We treat but GOD heals</h1>
+      <div class="carousel w-full aspect-[16/9]">
+        <div id="slide1" class="carousel-item relative w-full">
+          <div
+            class="w-full bg-cover bg-center flex items-center"
+            style="
+              background-image: url('/Assets/happyPatient2.jpg');
+              filter: brightness(1.3);
+            "
+          >
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+            <div class="relative z-20 ml-24 pt-8">
+              <h1 class="text-5xl font-bold text-white">
+                We treat but GOD heals
+              </h1>
+            </div>
+          </div>
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <div
+            class="w-full bg-cover bg-center flex items-center"
+            style="
+              background-image: url('/Assets/happyPatient2.jpg');
+              filter: brightness(1.3);
+            "
+          >
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+            <div class="relative z-20 ml-24 pt-8">
+              <h1 class="text-5xl font-bold text-white">
+                Your health is our priority
+              </h1>
+            </div>
+          </div>
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+          <div
+            class="w-full bg-cover bg-center flex items-center"
+            style="
+              background-image: url('/Assets/happyPatient.jpg');
+              filter: brightness(1.3);
+            "
+          >
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+            <div class="relative z-20 ml-24 pt-8">
+              <h1 class="text-5xl font-bold text-white">
+                Expert care with a personal touch
+              </h1>
+            </div>
+          </div>
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
         </div>
       </div>
       <div class="fixed right-4 top-40 bg-white rounded-lg shadow-lg p-6 w-64">
@@ -91,10 +151,16 @@
             </div>
             <span class="text-red-600 font-semibold text-lg">emergency</span>
           </a>
-          <a href="./BookLab.html" class="block text-blue-600 hover:text-blue-800">
+          <a
+            href="./BookLab.html"
+            class="block text-blue-600 hover:text-blue-800"
+          >
             <span>Book a Lab Test</span>
           </a>
-          <a href="./RequestAppointment.html" class="block text-blue-600 hover:text-blue-800">
+          <a
+            href="./RequestAppointment.html"
+            class="block text-blue-600 hover:text-blue-800"
+          >
             <span>Request an appointment</span>
           </a>
           <div
@@ -108,6 +174,230 @@
           </div>
         </div>
       </div>
+
+      <section class="bg-white py-10" id="card">
+        <div class="container mx-auto max-w-6xl px-4">
+          <h1 class="text-center text-3xl font-bold mb-10">GOD IS ABLE</h1>
+          <div class="flex flex-col lg:flex-row gap-8">
+            <div class="lg:w-1/4 space-y-2 ml-1">
+              <h2 class="text-2xl font-semibold text-gray-900">
+                Welcome to God is Able Clinic
+              </h2>
+              <p class="text-gray-600">
+                With over a decade of dedicated service, we have been committed
+                to providing exceptional healthcare services to our community.
+                Our state-of-the-art facilities and experienced professionals
+                ensure that you receive the highest quality of care.
+              </p>
+            </div>
+
+            <div class="lg:w-3/4">
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div
+                  class="card bg-white shadow-xl hover:shadow-2xl transition-shadow"
+                >
+                  <figure class="px-6 pt-6">
+                    <div
+                      class="w-32 h-24 flex items-center justify-center rounded-lg bg-gray-100"
+                    >
+                      <img
+                        src="/Assets/yearOfOperation.png"
+                        alt="years of experience"
+                      />
+                    </div>
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <h3 class="card-title text-xl">10 years of experience</h3>
+                  </div>
+                </div>
+
+                <div
+                  class="card bg-white shadow-xl hover:shadow-2xl transition-shadow"
+                >
+                  <figure class="px-6 pt-6">
+                    <div
+                      class="w-32 h-24 flex items-center justify-center rounded-lg bg-gray-100"
+                    >
+                      <img src="/Assets/clinic.png" alt="5 clinics" />
+                    </div>
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <h3 class="card-title text-xl">5 clinics</h3>
+                  </div>
+                </div>
+
+                <div
+                  class="card bg-white shadow-xl hover:shadow-2xl transition-shadow"
+                >
+                  <figure class="px-6 pt-6">
+                    <div
+                      class="w-32 h-24 flex items-center justify-center rounded-lg bg-gray-100"
+                    >
+                      <img
+                        src="/Assets/client.jpeg"
+                        alt="1000+ happy patients"
+                      />
+                    </div>
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <h3 class="card-title text-xl">1000+ happy patients</h3>
+                  </div>
+                </div>
+
+                <div
+                  class="card bg-white shadow-xl hover:shadow-2xl transition-shadow"
+                >
+                  <figure class="px-6 pt-6">
+                    <div
+                      class="w-32 h-24 flex items-center justify-center rounded-lg bg-gray-100"
+                    >
+                      <img src="/Assets/bed.png" alt="50 admission beds" />
+                    </div>
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <h3 class="card-title text-xl">50 Admission beds</h3>
+                  </div>
+                </div>
+
+                <div
+                  class="card bg-white shadow-xl hover:shadow-2xl transition-shadow"
+                >
+                  <figure class="px-6 pt-6">
+                    <div
+                      class="w-32 h-24 flex items-center justify-center rounded-lg bg-gray-100"
+                    >
+                      <img
+                        src="/Assets/state.png"
+                        alt="state-of-the-art facilities"
+                      />
+                    </div>
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <h3 class="card-title text-xl">
+                      State-of-the-art facilities
+                    </h3>
+                  </div>
+                </div>
+                <div
+                  class="card bg-white shadow-xl hover:shadow-2xl transition-shadow"
+                >
+                  <figure class="px-6 pt-6">
+                    <div
+                      class="w-32 h-24 flex items-center justify-center rounded-lg bg-gray-100"
+                    >
+                      <img src="/Assets/lab.png" alt="excellent patient care" />
+                    </div>
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <h3 class="card-title text-xl">
+                      Well equipped laboratories
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="why choose us bg-white">
+        <div class="hero">
+          <div class="hero-content flex-col lg:flex-row-reverse">
+            <img src="/Assets/happyPatient.jpg" alt="" />
+            <div>
+              <h1 class="text-5xl font-bold">WHY CHOOSE US?</h1>
+              <p class="py-6">
+                Experienced Medical Team: Highly qualified doctors and nurses
+                with years of experience. Personalized Care: Individualized
+                treatment plans for each patient. State-of-the-Art Facilities:
+                Latest medical technology for accurate diagnoses and effective
+                treatments. Comprehensive Services: Wide range of medical
+                services from routine check-ups to specialized treatments.
+                Patient-Centered Approach: Focus on patient comfort and
+                satisfaction in a welcoming environment. Convenient Location:
+                Easily accessible clinic in the heart of Rubaga with ample
+                parking space.
+              </p>
+              <a href="./About.html"
+                ><button class="btn btn-primary">Know more</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="staff">
+        <div class="doctors">
+          <div class="card">
+            <figure>
+              <img src="/Assets/doctor1.jpg" alt="" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">DR.Tumukunde Peter</h2>
+              <div class="card-actions">
+                <button class="btn-primary">View Profile</button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <figure>
+              <img src="/Assets/doctor1.jpg" alt="" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">DR.Tumukunde Peter</h2>
+              <div class="card-actions">
+                <button class="btn-primary">View Profile</button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <figure>
+              <img src="/Assets/doctor1.jpg" alt="" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">DR.Tumukunde Peter</h2>
+              <div class="card-actions">
+                <button class="btn-primary">View Profile</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="view-more-container">
+          <a href="./About.html#Doctors"
+            ><button class="view">View More</button></a
+          >
+        </div>
+      </section>
     </main>
+    <footer class="footer bg-base-200 text-base-content p-10 bg-whitesmoke">
+      <aside>
+        <img
+          src="/Assets/client.jpeg"
+          alt="logo"
+          width="100px"
+          height="100px"
+        />
+        <p>
+          GOD IS ABLE CLINICS
+          <br />
+          We treat God heals
+        </p>
+      </aside>
+      <nav>
+        <h6 class="footer-title">Services</h6>
+        <a class="link link-hover">lab</a>
+        <a class="link link-hover">Dental</a>
+        <a class="link link-hover">General Treatment</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">About us</h6>
+        <a class="link link-hover">Clinics</a>
+        <a class="link link-hover">Doctors</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Legal</h6>
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+      </nav>
+    </footer>
   </body>
 </html>
