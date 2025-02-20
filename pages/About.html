@@ -12,8 +12,9 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link rel="stylesheet" href="/Styles/style.css">
   </head>
-  <body>
+  <body class="bg-neutral">
     <header>
       <nav class="fixed top-0 left-0 right-0 bg-white shadow-md p-4 z-50">
         <div class="max-w-7xl mx-auto flex items-center">
@@ -28,33 +29,27 @@
           <div class="flex-1 flex justify-between items-center">
             <a
               href="./index.html"
-              class="text-3xl font-bold text-blue-600 hover:text-blue-700 transition-colors"
+              class="text-3xl font-bold text-primary hover:text-secondary transition-colors"
             >
               GOD IS ABLE
               <span class="block text-xl text-gray-500">CLINIC</span>
             </a>
-            <!-- Navigation bar -->
             <div class="flex space-x-8">
-              <a href="./index.html" class="text-gray-800 hover:text-blue-600"
-                >HOME</a
-              >
+              <a href="./index.html" class="text-gray-800 hover:text-primary">HOME</a>
               <div class="dropdown dropdown-hover">
-                <a href="#" class="text-gray-800 hover:text-blue-600"
-                  >ABOUT US</a
-                >
+                <a href="#" class="text-gray-800 hover:text-primary">ABOUT US</a>
                 <ul
                   class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
                 >
-                  <li><a href="#Clinics">Clinics</a></li>
-                  <li><a href="#Doctors">Doctors</a></li>
+                  <li><a href="#Vision">Vision</a></li>
+                  <li><a href="#Values">Values</a></li>
                 </ul>
               </div>
               <div class="dropdown dropdown-hover">
                 <a
                   href="./Services.html"
-                  class="text-gray-800 hover:text-blue-600"
-                  >SERVICES</a
-                >
+                  class="text-gray-800 hover:text-primary"
+                >SERVICES</a>
                 <ul
                   class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
                 >
@@ -65,9 +60,7 @@
                   </li>
                 </ul>
               </div>
-              <a href="./Contact.html" class="text-gray-800 hover:text-blue-600"
-                >CONTACT US</a
-              >
+              <a href="./Contact.html" class="text-gray-800 hover:text-primary">CONTACT US</a>
             </div>
           </div>
         </div>
@@ -76,27 +69,33 @@
     <main class="relative min-h-screen pt-24">
       <div
         class="h-96 bg-cover bg-center flex items-center justify-center"
-        style="background-image: url('/api/placeholder/1920/1080')"
+        style="background-image: url('/Assets/happyPatient.jpg')"
       >
         <div class="absolute inset-0 bg-black bg-opacity-50"></div>
         <div class="relative text-center z-10">
-          <h1 class="text-4xl font-bold text-white">We treat but GOD heals</h1>
+          <h1 class="text-4xl font-bold text-white">About us</h1>
         </div>
       </div>
-      <div class="fixed right-4 top-40 bg-white rounded-lg shadow-lg p-6 w-64">
+      <div class="fixed right-4 top-40 bg-white rounded-lg shadow-lg p-6 w-64 z-40">
         <div class="space-y-6">
           <a href="tel:256 786733562 " class="block">
             <div
-              class="flex items-center space-x-2 text-blue-600 hover:text-blue-800"
+              class="flex items-center space-x-2 text-primary hover:text-secondary"
             >
               <span>Call for the</span>
             </div>
             <span class="text-red-600 font-semibold text-lg">emergency</span>
           </a>
-          <a href="./BookLab.html" class="block text-blue-600 hover:text-blue-800">
+          <a
+            href="./BookLab.html"
+            class="block text-primary hover:text-secondary"
+          >
             <span>Book a Lab Test</span>
           </a>
-          <a href="./RequestAppointment.html" class="block text-blue-600 hover:text-blue-800">
+          <a
+            href="./RequestAppointment.html"
+            class="block text-primary hover:text-secondary"
+          >
             <span>Request an appointment</span>
           </a>
           <div
@@ -110,6 +109,331 @@
           </div>
         </div>
       </div>
+      <section class="bg-accent py-10">
+        <div class="lg:w-3/4 mx-auto">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pt-10"
+          >
+            <div
+              class="card bg-white shadow-xl hover:shadow-2xl transition-shadow"
+            >
+              <figure class="px-6 pt-6">
+                <div
+                  class="w-32 h-24 flex items-center justify-center rounded-lg bg-gray-100"
+                >
+                  <img
+                    src="/Assets/yearOfOperation.png"
+                    alt="years of experience"
+                  />
+                </div>
+              </figure>
+              <div class="card-body items-center text-center">
+                <h3 class="card-title text-xl">10 years of experience</h3>
+              </div>
+            </div>
+
+            <div
+              class="card bg-white shadow-xl hover:shadow-2xl transition-shadow"
+            >
+              <figure class="px-6 pt-6">
+                <div
+                  class="w-32 h-24 flex items-center justify-center rounded-lg bg-gray-100"
+                >
+                  <img src="/Assets/clinic.png" alt="5 clinics" />
+                </div>
+              </figure>
+              <div class="card-body items-center text-center">
+                <h3 class="card-title text-xl">5 clinics</h3>
+              </div>
+            </div>
+
+            <div
+              class="card bg-white shadow-xl hover:shadow-2xl transition-shadow"
+            >
+              <figure class="px-6 pt-6">
+                <div
+                  class="w-32 h-24 flex items-center justify-center rounded-lg bg-gray-100"
+                >
+                  <img src="/Assets/client.jpeg" alt="1000+ happy patients" />
+                </div>
+              </figure>
+              <div class="card-body items-center text-center">
+                <h3 class="card-title text-xl">1000+ happy patients</h3>
+              </div>
+            </div>
+          </div>
+          <div class="w-full my-8">
+            <hr class="border-t-2 border-primary" />
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div
+              class="card bg-white shadow-xl hover:shadow-2xl transition-shadow"
+            >
+              <figure class="px-6 pt-6">
+                <div
+                  class="w-32 h-24 flex items-center justify-center rounded-lg bg-gray-100"
+                >
+                  <img src="/Assets/bed.png" alt="50 admission beds" />
+                </div>
+              </figure>
+              <div class="card-body items-center text-center">
+                <h3 class="card-title text-xl">50 Admission beds</h3>
+              </div>
+            </div>
+
+            <div
+              class="card bg-white shadow-xl hover:shadow-2xl transition-shadow"
+            >
+              <figure class="px-6 pt-6">
+                <div
+                  class="w-32 h-24 flex items-center justify-center rounded-lg bg-gray-100"
+                >
+                  <img
+                    src="/Assets/state.png"
+                    alt="state-of-the-art facilities"
+                  />
+                </div>
+              </figure>
+              <div class="card-body items-center text-center">
+                <h3 class="card-title text-xl">State-of-the-art facilities</h3>
+              </div>
+            </div>
+
+            <div
+              class="card bg-white shadow-xl hover:shadow-2xl transition-shadow"
+            >
+              <figure class="px-6 pt-6">
+                <div
+                  class="w-32 h-24 flex items-center justify-center rounded-lg bg-gray-100"
+                >
+                  <img src="/Assets/lab.png" alt="excellent patient care" />
+                </div>
+              </figure>
+              <div class="card-body items-center text-center">
+                <h3 class="card-title text-xl">Well equipped laboratories</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="p-10">
+        <div
+          class="hero min-h-screen"
+          style="background-image: url(/Assets/happyPatient2.jpg)"
+        >
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="hero-content text-neutral-content text-center">
+            <div class="max-w-4xl">
+              <h1 class="mb-5 text-5xl font-bold">What people say about us</h1>
+              <p class="mb-8">
+                Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                assumenda excepturi exercitationem quasi. In deleniti eaque aut
+                repudiandae et a id nisi.
+              </p>
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div
+                  class="card w-72 bg-white shadow-lg hover:shadow-2xl rounded-2xl transition-all"
+                >
+                  <div class="flex justify-center pt-6">
+                    <div
+                      class="w-20 h-20 flex items-center justify-center rounded-full bg-gray-100"
+                    >
+                      <img
+                        src="/Assets/bed.png"
+                        alt="50 admission beds"
+                        class="w-12 h-12"
+                      />
+                    </div>
+                  </div>
+                  <div class="card-body items-center text-center">
+                    <h3 class="card-title text-lg font-semibold text-primary">
+                      50 Admission beds
+                    </h3>
+                  </div>
+                </div>
+                <div
+                  class="card w-72 bg-white shadow-lg hover:shadow-2xl rounded-2xl transition-all"
+                >
+                  <div class="flex justify-center pt-6">
+                    <div
+                      class="w-20 h-20 flex items-center justify-center rounded-full bg-gray-100"
+                    >
+                      <img
+                        src="/Assets/state.png"
+                        alt="State-of-the-art facilities"
+                        class="w-12 h-12"
+                      />
+                    </div>
+                  </div>
+                  <div class="card-body items-center text-center">
+                    <h3 class="card-title text-lg font-semibold text-primary">
+                      State-of-the-art facilities
+                    </h3>
+                  </div>
+                </div>
+                <div
+                  class="card w-72 bg-white shadow-lg hover:shadow-2xl rounded-2xl transition-all"
+                >
+                  <div class="flex justify-center pt-6">
+                    <div
+                      class="w-20 h-20 flex items-center justify-center rounded-full bg-gray-100"
+                    >
+                      <img
+                        src="/Assets/lab.png"
+                        alt="Well equipped laboratories"
+                        class="w-12 h-12"
+                      />
+                    </div>
+                  </div>
+                  <div class="card-body items-center text-center">
+                    <h3 class="card-title text-lg font-semibold text-primary">
+                      Well equipped laboratories
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="Vision" class="bg-white py-10">
+        <div class="max-w-4xl mx-auto p-8 flex flex-col md:flex-row items-center gap-8">
+          <div class="mb-12 md:w-1/2">
+            <h2 class="text-2xl font-semibold flex items-center gap-3 mb-4 text-primary">
+              Our vision
+            </h2>
+            <blockquote class="blockquote border-l-4 border-primary pl-4">
+              <p class="text-primary italic">
+                "To be a beacon of holistic healing and spiritual wellness,
+                where every visitor finds guidance, comfort, and support on
+                their journey to health."
+              </p>
+            </blockquote>
+          </div>
+          <div class="mb-12 md:w-1/2">
+            <h2 class="text-2xl font-semibold mb-4 text-primary">Our Mission</h2>
+            <blockquote class="blockquote border-l-4 border-primary pl-4">
+              <p class="text-primary italic">
+                "Our mission is to provide compassionate and holistic healthcare
+                by integrating modern medical practices with healing. We are
+                dedicated to promoting health and well-being through
+                personalized care, empowering individuals to achieve optimal
+                health in body, mind, and spirit."
+              </p>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+      <section id="Values" class="bg-accent py-10">
+        <div class="max-w-4xl mx-auto p-8">
+          <div class="flex items-center gap-2 mb-8">
+            <h2 class="text-3xl font-bold text-primary">OUR VALUES</h2>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="card bg-white shadow-xl">
+              <div class="card-body">
+                <div class="flex items-start gap-4">
+                  <div class="w-16 h-16">
+                    <img src="/placeholder.svg" alt="" />
+                  </div>
+                  <div>
+                    <h3 class="card-title mb-2 text-primary">Medical Expertise</h3>
+                    <p class="text-sm">
+                      We only employ the most qualified medical personnel, use
+                      cutting-edge technology and equipment, and adhere to
+                      strict safety and cleanliness standards.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card bg-white shadow-xl">
+              <div class="card-body">
+                <div class="flex items-start gap-4">
+                  <div class="w-16 h-16">
+                    <img src="/placeholder.svg" alt="" />
+                  </div>
+                  <div>
+                    <h3 class="card-title mb-2 text-primary">Caring</h3>
+                    <p class="text-sm">
+                      We are always here to support our patients on their
+                      journey to wellness, and our team will always go the extra
+                      mile to make sure they feel cared for and comfortable.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card bg-white shadow-xl">
+              <div class="card-body">
+                <div class="flex items-start gap-4">
+                  <div class="w-16 h-16">
+                    <img src="/placeholder.svg" alt="" />
+                  </div>
+                  <div>
+                    <h3 class="card-title mb-2 text-primary">Innovative</h3>
+                    <p class="text-sm">
+                      We believe in progress and excellence, that is why we are
+                      constantly innovating and expanding our services.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card bg-white shadow-xl">
+              <div class="card-body">
+                <div class="flex items-start gap-4">
+                  <div class="w-16 h-16">
+                    <img src="/placeholder.svg" alt="" />
+                  </div>
+                  <div>
+                    <h3 class="card-title mb-2 text-primary">Transparent</h3>
+                    <p class="text-sm">
+                      We treat all patients as if they are family or friend. We
+                      will treat them with the same dedication and commitment we
+                      would invest on those closest to us.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer class="footer bg-primary text-white p-10">
+      <aside>
+        <img
+          src="/Assets/client.jpeg"
+          alt="logo"
+          width="100"
+          height="100"
+          class="rounded-full"
+        />
+        <p class="font-bold">
+          GOD IS ABLE CLINICS
+          <br />
+          We treat, God heals
+        </p>
+      </aside>
+      <nav>
+        <h6 class="footer-title">Services</h6>
+        <a class="link link-hover">Lab</a>
+        <a class="link link-hover">Dental</a>
+        <a class="link link-hover">General Treatment</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">About us</h6>
+        <a class="link link-hover">Clinics</a>
+        <a class="link link-hover">Doctors</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Legal</h6>
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+      </nav>
+    </footer>
   </body>
 </html>

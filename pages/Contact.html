@@ -12,8 +12,13 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link rel="stylesheet" href="/Styles/style.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    />
   </head>
-  <body>
+  <body class="bg-neutral">
     <header>
       <nav class="fixed top-0 left-0 right-0 bg-white shadow-md p-4 z-50">
         <div class="max-w-7xl mx-auto flex items-center">
@@ -28,31 +33,31 @@
           <div class="flex-1 flex justify-between items-center">
             <a
               href="./index.html"
-              class="text-3xl font-bold text-blue-600 hover:text-blue-700 transition-colors"
+              class="text-3xl font-bold text-primary hover:text-secondary transition-colors"
             >
               GOD IS ABLE
               <span class="block text-xl text-gray-500">CLINIC</span>
             </a>
             <!-- Navigation bar -->
             <div class="flex space-x-8">
-              <a href="./index.html" class="text-gray-800 hover:text-blue-600"
+              <a href="./index.html" class="text-gray-800 hover:text-primary"
                 >HOME</a
               >
               <div class="dropdown dropdown-hover">
-                <a href="./About.html" class="text-gray-800 hover:text-blue-600"
+                <a href="./About.html" class="text-gray-800 hover:text-primary"
                   >ABOUT US</a
                 >
                 <ul
                   class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
                 >
-                  <li><a href="./About.html#Clinics">Clinics</a></li>
-                  <li><a href="./About.html#Doctors">Doctors</a></li>
+                  <li><a href="./About.html#Vision">Vision</a></li>
+                  <li><a href="./About.html#Values">Values</a></li>
                 </ul>
               </div>
               <div class="dropdown dropdown-hover">
                 <a
                   href="./Services.html"
-                  class="text-gray-800 hover:text-blue-600"
+                  class="text-gray-800 hover:text-primary"
                   >SERVICES</a
                 >
                 <ul
@@ -65,7 +70,7 @@
                   </li>
                 </ul>
               </div>
-              <a href="#" class="text-gray-800 hover:text-blue-600"
+              <a href="#" class="text-gray-800 hover:text-primary"
                 >CONTACT US</a
               >
             </div>
@@ -76,40 +81,192 @@
     <main class="relative min-h-screen pt-24">
       <div
         class="h-96 bg-cover bg-center flex items-center justify-center"
-        style="background-image: url('/api/placeholder/1920/1080')"
+        style="background-image: url('/Assets/happyPatient2.jpg')"
       >
         <div class="absolute inset-0 bg-black bg-opacity-50"></div>
         <div class="relative text-center z-10">
-          <h1 class="text-4xl font-bold text-white">We treat but GOD heals</h1>
+          <h1 class="text-4xl font-bold text-white">Contact us</h1>
         </div>
       </div>
-      <div class="fixed right-4 top-40 bg-white rounded-lg shadow-lg p-6 w-64">
+      <div class="fixed right-4 top-40 bg-white rounded-lg shadow-lg p-6 w-64 z-40">
         <div class="space-y-6">
           <a href="tel:256 786733562 " class="block">
             <div
-              class="flex items-center space-x-2 text-blue-600 hover:text-blue-800"
+              class="flex items-center space-x-2 text-primary hover:text-secondary"
             >
               <span>Call for the</span>
             </div>
             <span class="text-red-600 font-semibold text-lg">emergency</span>
           </a>
-          <a href="./BookLab.html" class="block text-blue-600 hover:text-blue-800">
+          <a
+            href="./BookLab.html"
+            class="block text-primary hover:text-secondary"
+          >
             <span>Book a Lab Test</span>
           </a>
-          <a href="./RequestAppointment.html" class="block text-blue-600 hover:text-blue-800">
+          <a
+            href="./RequestAppointment.html"
+            class="block text-primary hover:text-secondary"
+          >
             <span>Request an appointment</span>
           </a>
-          <div
-            class="absolute left-[-220px] top-0 hidden group-hover/services:block"
-          >
-            <ul class="menu bg-white p-2 rounded-box shadow-lg w-52">
-              <li><a href="./Services.html#Dental">Dental</a></li>
-              <li><a href="./Services.html#Lab">Lab</a></li>
-              <li><a href="./Services.html#General">General Treatment</a></li>
-            </ul>
-          </div>
         </div>
       </div>
+      <section class="bg-white p-8">
+        <div class="container mx-auto max-w-6xl">
+          <div class="text-center mb-12">
+            <h2 class="text-2xl font-bold px-4">|| Contact ||</h2>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="bg-white rounded-lg shadow-lg p-8">
+              <form class="space-y-6 relative z-10">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <label class="block text-gray-600 mb-2">Name</label>
+                    <input
+                      type="text"
+                      placeholder="Name"
+                      class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                    />
+                  </div>
+                  <div>
+                    <label class="block text-gray-600 mb-2">Phone</label>
+                    <input
+                      type="tel"
+                      placeholder="Phone Number"
+                      class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <label class="block text-gray-600 mb-2">Email</label>
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                  />
+                </div>
+                <div>
+                  <label class="block text-gray-600 mb-2">Message</label>
+                  <textarea
+                    placeholder="Your Message..."
+                    rows="5"
+                    class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="w-full bg-primary text-white py-3 px-6 rounded-md hover:bg-secondary transition-colors duration-300"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
+            <div class="flex flex-col justify-start space-y-8 p-8">
+              <div>
+                <p class="text-gray-600 text-lg mb-4">
+                  Feel free to contact us.
+                </p>
+                <p class="text-gray-600 text-lg">
+                  Please fill in the form below in case of any questions or
+                  feedback and comments.
+                </p>
+              </div>
+              <div class="flex space-x-8 mt-8">
+                <a
+                  href="#"
+                  class="transform hover:scale-110 transition-transform duration-300"
+                >
+                  <i class="bx bxl-twitter text-3xl text-blue-400"></i>
+                </a>
+                <a
+                  href="#"
+                  class="transform hover:scale-110 transition-transform duration-300"
+                >
+                  <i class="bx bxl-whatsapp text-3xl text-green-500"></i>
+                </a>
+                <a
+                  href="#"
+                  class="transform hover:scale-110 transition-transform duration-300"
+                >
+                  <i class="bx bxl-instagram text-3xl text-pink-600"></i>
+                </a>
+                <a
+                  href="#"
+                  class="transform hover:scale-110 transition-transform duration-300"
+                >
+                  <i class="bx bxl-facebook text-3xl text-blue-600"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="mapouter">
+          <div class="gmap_canvas">
+            <iframe
+              class="gmap_iframe"
+              width="100%"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              src="https://maps.google.com/maps?width=1000&amp;height=500&amp;hl=en&amp;q=University of Oxford&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            ></iframe
+            ><a href="https://sprunkin.com/">Sprunki Phases</a>
+          </div>
+          <style>
+            .mapouter {
+              position: relative;
+              text-align: right;
+              width: 100%;
+              height: 500px;
+            }
+            .gmap_canvas {
+              overflow: hidden;
+              background: none !important;
+              width: 100%;
+              height: 500px;
+            }
+            .gmap_iframe {
+              height: 500px !important;
+            }
+          </style>
+        </div>
+      </section>
     </main>
+    <footer class="footer bg-primary text-white p-10">
+      <aside>
+        <img
+          src="/Assets/client.jpeg"
+          alt="logo"
+          width="100"
+          height="100"
+          class="rounded-full"
+        />
+        <p class="font-bold">
+          GOD IS ABLE CLINICS
+          <br />
+          We treat, God heals
+        </p>
+      </aside>
+      <nav>
+        <h6 class="footer-title">Services</h6>
+        <a class="link link-hover">Lab</a>
+        <a class="link link-hover">Dental</a>
+        <a class="link link-hover">General Treatment</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">About us</h6>
+        <a class="link link-hover">Clinics</a>
+        <a class="link link-hover">Doctors</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Legal</h6>
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+      </nav>
+    </footer>
   </body>
 </html>

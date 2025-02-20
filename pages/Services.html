@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GOD IS ABLE Home</title>
+    <title>GOD IS ABLE Services</title>
     <link rel="stylesheet" href="/Styles/style.css" />
     <link rel="icon" href="/Assets/logo.png" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -12,8 +12,9 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link rel="stylesheet" href="/Styles/style.css">
   </head>
-  <body>
+  <body class="bg-neutral">
     <header>
       <nav class="fixed top-0 left-0 right-0 bg-white shadow-md p-4 z-50">
         <div class="max-w-7xl mx-auto flex items-center">
@@ -28,31 +29,24 @@
           <div class="flex-1 flex justify-between items-center">
             <a
               href="./index.html"
-              class="text-3xl font-bold text-blue-600 hover:text-blue-700 transition-colors"
+              class="text-3xl font-bold text-primary hover:text-secondary transition-colors"
             >
               GOD IS ABLE
               <span class="block text-xl text-gray-500">CLINIC</span>
             </a>
-            <!-- Navigation bar -->
             <div class="flex space-x-8">
-              <a href="./index.html" class="text-gray-800 hover:text-blue-600"
-                >HOME</a
-              >
+              <a href="./index.html" class="text-gray-800 hover:text-primary">HOME</a>
               <div class="dropdown dropdown-hover">
-                <a href="./About.html" class="text-gray-800 hover:text-blue-600"
-                  >ABOUT US</a
-                >
+                <a href="./About.html" class="text-gray-800 hover:text-primary">ABOUT US</a>
                 <ul
                   class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
                 >
-                  <li><a href="./About.html#Clinics">Clinics</a></li>
-                  <li><a href="./About.html#Doctors">Doctors</a></li>
+                  <li><a href="./About.html#Vision">Vision</a></li>
+                  <li><a href="./About.html#Values">Values</a></li>
                 </ul>
               </div>
               <div class="dropdown dropdown-hover">
-                <a href="#" class="text-gray-800 hover:text-blue-600"
-                  >SERVICES</a
-                >
+                <a href="#" class="text-gray-800 hover:text-primary">SERVICES</a>
                 <ul
                   class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
                 >
@@ -61,9 +55,7 @@
                   <li><a href="#General">General Treatment</a></li>
                 </ul>
               </div>
-              <a href="./Contact.html" class="text-gray-800 hover:text-blue-600"
-                >CONTACT US</a
-              >
+              <a href="./Contact.html" class="text-gray-800 hover:text-primary">CONTACT US</a>
             </div>
           </div>
         </div>
@@ -72,40 +64,153 @@
     <main class="relative min-h-screen pt-24">
       <div
         class="h-96 bg-cover bg-center flex items-center justify-center"
-        style="background-image: url('/api/placeholder/1920/1080')"
+        style="background-image: url('/Assets/happyPatient.jpg')"
       >
         <div class="absolute inset-0 bg-black bg-opacity-50"></div>
         <div class="relative text-center z-10">
-          <h1 class="text-4xl font-bold text-white">We treat but GOD heals</h1>
+          <h1 class="text-4xl font-bold text-white">Our Services</h1>
         </div>
       </div>
-      <div class="fixed right-4 top-40 bg-white rounded-lg shadow-lg p-6 w-64">
+      <div class="fixed right-4 top-40 bg-white rounded-lg shadow-lg p-6 w-64 z-40">
         <div class="space-y-6">
-          <a href="tel:256 786733562 " class="block">
+          <a href="tel:256 786733562" class="block">
             <div
-              class="flex items-center space-x-2 text-blue-600 hover:text-blue-800"
+              class="flex items-center space-x-2 text-primary hover:text-secondary"
             >
               <span>Call for the</span>
             </div>
             <span class="text-red-600 font-semibold text-lg">emergency</span>
           </a>
-          <a href="./BookLab.html" class="block text-blue-600 hover:text-blue-800">
+          <a
+            href="./BookLab.html"
+            class="block text-primary hover:text-secondary"
+          >
             <span>Book a Lab Test</span>
           </a>
-          <a href="./RequestAppointment.html" class="block text-blue-600 hover:text-blue-800">
+          <a
+            href="./RequestAppointment.html"
+            class="block text-primary hover:text-secondary"
+          >
             <span>Request an appointment</span>
           </a>
-          <div
-            class="absolute left-[-220px] top-0 hidden group-hover/services:block"
-          >
-            <ul class="menu bg-white p-2 rounded-box shadow-lg w-52">
-              <li><a href="#Dental">Dental</a></li>
-              <li><a href="#Lab">Lab</a></li>
-              <li><a href="#General">General Treatment</a></li>
-            </ul>
-          </div>
         </div>
       </div>
+      <section id="Dental" class="bg-white py-16">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold text-primary mb-8">Dental Services</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="card bg-base-100 shadow-xl">
+              <figure><img src="/Assets/dental checkup.jpeg" alt="Dental Checkup" /></figure>
+              <div class="card-body">
+                <h3 class="card-title">Dental Checkup</h3>
+                <p>Regular dental checkups to maintain oral health.</p>
+              </div>
+            </div>
+            <div class="card bg-base-100 shadow-xl">
+              <figure><img src="/Assets/teethcleaning.jpeg" alt="Teeth Cleaning" /></figure>
+              <div class="card-body">
+                <h3 class="card-title">Teeth Cleaning</h3>
+                <p>Professional teeth cleaning for a brighter smile.</p>
+              </div>
+            </div>
+            <div class="card bg-base-100 shadow-xl">
+              <figure><img src="/Assets/sugery.jpeg" alt="Dental Surgery" /></figure>
+              <div class="card-body">
+                <h3 class="card-title">Dental Surgery</h3>
+                <p>Advanced dental procedures and surgeries.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="Lab" class="bg-accent py-16">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold text-primary mb-8">Laboratory Services</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="card bg-base-100 shadow-xl">
+              <figure><img src="/Assets/blood.jpeg" alt="Blood Tests" /></figure>
+              <div class="card-body">
+                <h3 class="card-title">Blood Tests</h3>
+                <p>Comprehensive blood analysis for various health indicators.</p>
+              </div>
+            </div>
+            <div class="card bg-base-100 shadow-xl">
+              <figure><img src="/Assets/urine.jpeg" alt="Urine Analysis" /></figure>
+              <div class="card-body">
+                <h3 class="card-title">Urine Analysis</h3>
+                <p>Detailed urine tests for kidney function and more.</p>
+              </div>
+            </div>
+            <div class="card bg-base-100 shadow-xl">
+              <figure><img src="/Assets/imaging.jpeg" alt="Imaging Services" /></figure>
+              <div class="card-body">
+                <h3 class="card-title">Imaging Services</h3>
+                <p>X-rays, ultrasounds, and other imaging diagnostics.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="General" class="bg-white py-16">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold text-primary mb-8">General Treatment</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="card bg-base-100 shadow-xl">
+              <figure><img src="/Assets/general.jpeg" alt="General Consultation" /></figure>
+              <div class="card-body">
+                <h3 class="card-title">General Consultation</h3>
+                <p>Comprehensive health checkups and consultations.</p>
+              </div>
+            </div>
+            <div class="card bg-base-100 shadow-xl">
+              <figure><img src="/Assets/vaccination.jpeg" alt="Vaccinations" /></figure>
+              <div class="card-body">
+                <h3 class="card-title">Vaccinations</h3>
+                <p>Routine and travel vaccinations for all ages.</p>
+              </div>
+            </div>
+            <div class="card bg-base-100 shadow-xl">
+              <figure><img src="/Assets/minor.jpeg" alt="Minor Surgeries" /></figure>
+              <div class="card-body">
+                <h3 class="card-title">Minor Surgeries</h3>
+                <p>Outpatient procedures and minor surgical interventions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer class="footer bg-primary text-white p-10">
+      <aside>
+        <img
+          src="/Assets/client.jpeg"
+          alt="logo"
+          width="100"
+          height="100"
+          class="rounded-full"
+        />
+        <p class="font-bold">
+          GOD IS ABLE CLINICS
+          <br />
+          We treat, God heals
+        </p>
+      </aside>
+      <nav>
+        <h6 class="footer-title">Services</h6>
+        <a class="link link-hover">Lab</a>
+        <a class="link link-hover">Dental</a>
+        <a class="link link-hover">General Treatment</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">About us</h6>
+        <a class="link link-hover">Clinics</a>
+        <a class="link link-hover">Doctors</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Legal</h6>
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+      </nav>
+    </footer>
   </body>
 </html>

@@ -12,8 +12,9 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link rel="stylesheet" href="/Styles/style.css">
   </head>
-  <body>
+  <body class="bg-neutral">
     <header>
       <nav class="fixed top-0 left-0 right-0 bg-white shadow-md p-4 z-50">
         <div class="max-w-7xl mx-auto flex items-center">
@@ -28,29 +29,28 @@
           <div class="flex-1 flex justify-between items-center">
             <a
               href="./index.html"
-              class="text-3xl font-bold text-blue-600 hover:text-blue-700 transition-colors"
+              class="text-3xl font-bold text-primary hover:text-secondary transition-colors"
             >
               GOD IS ABLE
               <span class="block text-xl text-gray-500">CLINIC</span>
             </a>
-            <!-- Navigation bar -->
             <div class="flex space-x-8">
-              <a href="#" class="text-gray-800 hover:text-blue-600">HOME</a>
+              <a href="#" class="text-gray-800 hover:text-primary">HOME</a>
               <div class="dropdown dropdown-hover">
-                <a href="./About.html" class="text-gray-800 hover:text-blue-600"
+                <a href="./About.html" class="text-gray-800 hover:text-primary"
                   >ABOUT US</a
                 >
                 <ul
                   class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
                 >
-                  <li><a href="./About.html#Clinics">Clinics</a></li>
-                  <li><a href="./About.html#Doctors">Doctors</a></li>
+                  <li><a href="./About.html#Vision">Vision</a></li>
+                  <li><a href="./About.html#Values">Values</a></li>
                 </ul>
               </div>
               <div class="dropdown dropdown-hover">
                 <a
                   href="./Services.html"
-                  class="text-gray-800 hover:text-blue-600"
+                  class="text-gray-800 hover:text-primary"
                   >SERVICES</a
                 >
                 <ul
@@ -63,7 +63,7 @@
                   </li>
                 </ul>
               </div>
-              <a href="./Contact.html" class="text-gray-800 hover:text-blue-600"
+              <a href="./Contact.html" class="text-gray-800 hover:text-primary"
                 >CONTACT US</a
               >
             </div>
@@ -71,7 +71,6 @@
         </div>
       </nav>
     </header>
-    <!-- main content -->
     <main class="relative min-h-screen pt-24">
       <div class="carousel w-full aspect-[16/9]">
         <div id="slide1" class="carousel-item relative w-full">
@@ -84,7 +83,7 @@
           >
             <div class="absolute inset-0 bg-black bg-opacity-50"></div>
             <div class="relative z-20 ml-24 pt-8">
-              <h1 class="text-5xl font-bold text-white">
+              <h1 class="text-4xl font-bold text-white">
                 We treat but GOD heals
               </h1>
             </div>
@@ -106,7 +105,7 @@
           >
             <div class="absolute inset-0 bg-black bg-opacity-50"></div>
             <div class="relative z-20 ml-24 pt-8">
-              <h1 class="text-5xl font-bold text-white">
+              <h1 class="text-4xl font-bold text-white">
                 Your health is our priority
               </h1>
             </div>
@@ -128,7 +127,7 @@
           >
             <div class="absolute inset-0 bg-black bg-opacity-50"></div>
             <div class="relative z-20 ml-24 pt-8">
-              <h1 class="text-5xl font-bold text-white">
+              <h1 class="text-4xl font-bold text-white">
                 Expert care with a personal touch
               </h1>
             </div>
@@ -141,11 +140,13 @@
           </div>
         </div>
       </div>
-      <div class="fixed right-4 top-40 bg-white rounded-lg shadow-lg p-6 w-64">
+      <div
+        class="fixed right-4 top-40 bg-white rounded-lg shadow-lg p-6 w-64 z-40"
+      >
         <div class="space-y-6">
           <a href="tel:256 786733562 " class="block">
             <div
-              class="flex items-center space-x-2 text-blue-600 hover:text-blue-800"
+              class="flex items-center space-x-2 text-primary hover:text-secondary"
             >
               <span>Call for the</span>
             </div>
@@ -153,13 +154,13 @@
           </a>
           <a
             href="./BookLab.html"
-            class="block text-blue-600 hover:text-blue-800"
+            class="block text-primary hover:text-secondary"
           >
             <span>Book a Lab Test</span>
           </a>
           <a
             href="./RequestAppointment.html"
-            class="block text-blue-600 hover:text-blue-800"
+            class="block text-primary hover:text-secondary"
           >
             <span>Request an appointment</span>
           </a>
@@ -175,9 +176,11 @@
         </div>
       </div>
 
-      <section class="bg-white py-10" id="card">
+      <section class="bg-accent py-10" id="card">
         <div class="container mx-auto max-w-6xl px-4">
-          <h1 class="text-center text-3xl font-bold mb-10">GOD IS ABLE</h1>
+          <h1 class="text-center text-3xl font-bold mb-10 text-primary">
+            GOD IS ABLE
+          </h1>
           <div class="flex flex-col lg:flex-row gap-8">
             <div class="lg:w-1/4 space-y-2 ml-1">
               <h2 class="text-2xl font-semibold text-gray-900">
@@ -300,13 +303,17 @@
         </div>
       </section>
 
-      <section class="why choose us bg-white">
+      <section class="why choose us bg-white py-10">
         <div class="hero">
           <div class="hero-content flex-col lg:flex-row-reverse">
-            <img src="/Assets/happyPatient.jpg" alt="" />
+            <img
+              src="/Assets/happyPatient.jpg"
+              alt=""
+              class="max-w-sm rounded-lg shadow-2xl"
+            />
             <div>
-              <h1 class="text-5xl font-bold">WHY CHOOSE US?</h1>
-              <p class="py-6">
+              <h1 class="text-5xl font-bold text-primary">WHY CHOOSE US?</h1>
+              <p class="py-6 text-gray-700">
                 Experienced Medical Team: Highly qualified doctors and nurses
                 with years of experience. Personalized Care: Individualized
                 treatment plans for each patient. State-of-the-Art Facilities:
@@ -319,72 +326,88 @@
                 parking space.
               </p>
               <a href="./About.html"
-                ><button class="btn btn-primary">Know more</button></a
+                ><button class="btn bg-primary text-white hover:bg-secondary">
+                  Know more
+                </button></a
               >
             </div>
           </div>
         </div>
       </section>
-      <section class="staff">
-        <div class="doctors">
-          <div class="card">
-            <figure>
-              <img src="/Assets/doctor1.jpg" alt="" />
-            </figure>
-            <div class="card-body">
-              <h2 class="card-title">DR.Tumukunde Peter</h2>
-              <div class="card-actions">
-                <button class="btn-primary">View Profile</button>
+      <section class="staff bg-accent py-10">
+        <div class="container mx-auto">
+          <h2 class="text-3xl font-bold text-center text-primary mb-8">
+            Our Doctors
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="card bg-white shadow-xl">
+              <figure class="px-6 pt-6">
+                <img src="/Assets/doctor1.jpg" alt="Dr. Lillian Kaliisa" class="rounded-full w-48 h-48 object-cover" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title">Dr.Peter Tumukunde</h2>
+                <div class="card-actions">
+                  <button class="btn bg-primary text-white hover:bg-secondary">
+                    View Profile
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card bg-white shadow-xl">
+              <figure class="px-6 pt-6">
+                <img src="/Assets/dr.Thierry Nshimirimana.jpeg" alt="Dr. Thierry Nshimirimana" class="rounded-full w-48 h-48 object-cover" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title">Dr. Thierry Nshimirimana</h2>
+                <div class="card-actions">
+                  <button class="btn bg-primary text-white hover:bg-secondary">
+                    View Profile
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card bg-white shadow-xl">
+              <figure class="px-6 pt-6">
+                <img src="/Assets/dr.Rosette Katongole.jpg" alt="Dr. Rosette Katongole" class="rounded-full w-48 h-48 object-cover" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title">Dr. Rosette Katongole</h2>
+                <div class="card-actions">
+                  <button class="btn bg-primary text-white hover:bg-secondary">
+                    View Profile
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-          <div class="card">
-            <figure>
-              <img src="/Assets/doctor1.jpg" alt="" />
-            </figure>
-            <div class="card-body">
-              <h2 class="card-title">DR.Tumukunde Peter</h2>
-              <div class="card-actions">
-                <button class="btn-primary">View Profile</button>
-              </div>
-            </div>
+          <div class="text-center mt-8">
+            <a href="./About.html#Doctors">
+              <button class="btn bg-primary text-white hover:bg-secondary">
+                View More
+              </button>
+            </a>
           </div>
-          <div class="card">
-            <figure>
-              <img src="/Assets/doctor1.jpg" alt="" />
-            </figure>
-            <div class="card-body">
-              <h2 class="card-title">DR.Tumukunde Peter</h2>
-              <div class="card-actions">
-                <button class="btn-primary">View Profile</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="view-more-container">
-          <a href="./About.html#Doctors"
-            ><button class="view">View More</button></a
-          >
         </div>
       </section>
     </main>
-    <footer class="footer bg-base-200 text-base-content p-10 bg-whitesmoke">
+    <footer class="footer bg-primary text-white p-10">
       <aside>
         <img
           src="/Assets/client.jpeg"
           alt="logo"
-          width="100px"
-          height="100px"
+          width="100"
+          height="100"
+          class="rounded-full"
         />
-        <p>
+        <p class="font-bold">
           GOD IS ABLE CLINICS
           <br />
-          We treat God heals
+          We treat, God heals
         </p>
       </aside>
       <nav>
         <h6 class="footer-title">Services</h6>
-        <a class="link link-hover">lab</a>
+        <a class="link link-hover">Lab</a>
         <a class="link link-hover">Dental</a>
         <a class="link link-hover">General Treatment</a>
       </nav>
