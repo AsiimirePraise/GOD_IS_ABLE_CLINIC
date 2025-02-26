@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GOD IS ABLE Services</title>
-    <link rel="stylesheet" href="../Styles/style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <link rel="icon" href="/Assets/logo.png" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link
@@ -14,50 +14,107 @@
     />
     <link rel="stylesheet" href="/Styles/style.css">
   </head>
-  <body class="bg-neutral">
+  <body class="bg-gray-50">
     <header>
-      <nav class="fixed top-0 left-0 right-0 bg-white shadow-md p-4 z-50">
-        <div class="max-w-7xl mx-auto flex items-center">
-          <a href="./index.html" class="flex items-center">
-            <img
-              id="logo"
-              src="/Assets/logo.png"
-              alt="GOD IS ABLE CLINIC Logo"
-              class="h-20"
-            />
-          </a>
-          <div class="flex-1 flex justify-between items-center">
+      <nav class="fixed top-0 left-0 right-0 bg-gray-900 shadow-sm p-4 z-50">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+          <div class="flex items-center gap-4">
+            <a href="./index.html" class="flex items-center">
+              <img
+                id="logo"
+                src="./Assets/logo.png"
+                alt="GOD IS ABLE CLINIC Logo"
+                class="h-20"
+              />
+            </a>
             <a
               href="./index.html"
-              class="text-3xl font-bold text-primary hover:text-secondary transition-colors"
+              class="text-2xl font-semibold text-gray-100 hover:text-primary transition-colors"
             >
               GOD IS ABLE
-              <span class="block text-xl text-gray-500">CLINIC</span>
+              <span class="block text-xl text-gray-300">CLINIC</span>
             </a>
-            <div class="flex space-x-8">
-              <a href="./index.html" class="text-gray-800 hover:text-primary">HOME</a>
-              <div class="dropdown dropdown-hover">
-                <a href="./About.html" class="text-gray-800 hover:text-primary">ABOUT US</a>
-                <ul
-                  class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
-                >
-                  <li><a href="./About.html#Vision">Vision</a></li>
-                  <li><a href="./About.html#Values">Values</a></li>
-                </ul>
-              </div>
-              <div class="dropdown dropdown-hover">
-                <a href="#" class="text-gray-800 hover:text-primary">SERVICES</a>
-                <ul
-                  class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
-                >
-                  <li><a href="#Dental">Dental</a></li>
-                  <li><a href="#Lab">Lab</a></li>
-                  <li><a href="#General">General Treatment</a></li>
-                </ul>
-              </div>
-              <a href="./Contact.html" class="text-gray-800 hover:text-primary">CONTACT US</a>
-            </div>
           </div>
+          <div class="lg:hidden">
+            <button id="menu-toggle" class="text-gray-100 focus:outline-none">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="hidden lg:flex space-x-8">
+            <a href="./index.html" class="text-gray-300 hover:text-primary">HOME</a>
+            <div class="dropdown dropdown-hover">
+              <a href="./About.html" class="text-gray-300 hover:text-primary"
+                >ABOUT US</a
+              >
+              <ul
+                class="dropdown-content menu p-2 shadow bg-gray-800 rounded-box w-52"
+              >
+                <li>
+                  <a href="./About.html#Vision" class="text-gray-300">Vision</a>
+                </li>
+                <li>
+                  <a href="./About.html#Values" class="text-gray-300">Values</a>
+                </li>
+              </ul>
+            </div>
+            <div class="dropdown dropdown-hover">
+              <a href="./Services.html" class="text-gray-300 hover:text-primary"
+                >SERVICES</a
+              >
+              <ul
+                class="dropdown-content menu p-2 shadow bg-gray-800 rounded-box w-52"
+              >
+                <li>
+                  <a href="./Services.html#Dental" class="text-gray-300"
+                    >Dental</a
+                  >
+                </li>
+                <li>
+                  <a href="./Services.html#Lab" class="text-gray-300">Lab</a>
+                </li>
+                <li>
+                  <a href="./Services.html#General" class="text-gray-300"
+                    >General Treatment</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <a href="./Contact.html" class="text-gray-300 hover:text-primary"
+              >CONTACT US</a
+            >
+          </div>
+        </div>
+        <div id="mobile-menu" class="lg:hidden hidden mt-4">
+          <a href="#" class="block py-2 text-gray-100 hover:text-primary"
+            >HOME</a
+          >
+          <a
+            href="./About.html"
+            class="block py-2 text-gray-100 hover:text-primary"
+            >ABOUT US</a
+          >
+          <a
+            href="./Services.html"
+            class="block py-2 text-gray-100 hover:text-primary"
+            >SERVICES</a
+          >
+          <a
+            href="./Contact.html"
+            class="block py-2 text-gray-100 hover:text-primary"
+            >CONTACT US</a
+          >
         </div>
       </nav>
     </header>
@@ -71,33 +128,27 @@
           <h1 class="text-4xl font-bold text-white">Our Services</h1>
         </div>
       </div>
-      <div class="fixed right-4 top-40 bg-white rounded-lg shadow-lg p-6 w-64 z-40">
+      <div class="fixed right-4 top-40 bg-gray-800 rounded-lg shadow-lg p-6 w-64 z-40">
         <div class="space-y-6">
           <a href="tel:256 786733562" class="block">
-            <div
-              class="flex items-center space-x-2 text-primary hover:text-secondary"
-            >
-              <span>Call for the</span>
+            <div class="flex items-center space-x-2 text-primary hover:text-secondary">
+              <span class="text-gray-300">Call for the</span>
             </div>
             <span class="text-red-600 font-semibold text-lg">emergency</span>
           </a>
-          <a
-            href="./BookLab.html"
-            class="block text-primary hover:text-secondary"
-          >
+          <a href="./BookLab.html" class="block text-gray-300 hover:text-secondary">
             <span>Book a Lab Test</span>
           </a>
-          <a
-            href="./RequestAppointment.html"
-            class="block text-primary hover:text-secondary"
-          >
+          <a href="./RequestAppointment.html" class="block text-gray-300 hover:text-secondary">
             <span>Request an appointment</span>
           </a>
         </div>
       </div>
+      
+      
       <section id="Dental" class="bg-white py-16">
         <div class="container mx-auto px-4">
-          <h2 class="text-3xl font-bold text-primary mb-8">Dental Services</h2>
+          <h2 class="text-3xl font-bold text-gray-800 mb-8">Dental Services</h2>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div class="card bg-base-100 shadow-xl">
               <figure><img src="/Assets/dental checkup.jpeg" alt="Dental Checkup" /></figure>
@@ -123,9 +174,9 @@
           </div>
         </div>
       </section>
-      <section id="Lab" class="bg-accent py-16">
+      <section id="Lab" class="bg-gray-100 py-16">
         <div class="container mx-auto px-4">
-          <h2 class="text-3xl font-bold text-primary mb-8">Laboratory Services</h2>
+          <h2 class="text-3xl font-bold text-gray-800 mb-8">Laboratory Services</h2>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div class="card bg-base-100 shadow-xl">
               <figure><img src="/Assets/blood.jpeg" alt="Blood Tests" /></figure>
@@ -153,7 +204,7 @@
       </section>
       <section id="General" class="bg-white py-16">
         <div class="container mx-auto px-4">
-          <h2 class="text-3xl font-bold text-primary mb-8">General Treatment</h2>
+          <h2 class="text-3xl font-bold text-gray-800 mb-8">General Treatment</h2>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div class="card bg-base-100 shadow-xl">
               <figure><img src="/Assets/general.jpeg" alt="General Consultation" /></figure>
@@ -180,7 +231,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer bg-primary text-white p-10">
+    <footer class="footer bg-[#1a1f2e] text-white p-10">
       <aside>
         <img
           src="/Assets/client.jpeg"
@@ -197,20 +248,27 @@
       </aside>
       <nav>
         <h6 class="footer-title">Services</h6>
-        <a class="link link-hover">Lab</a>
-        <a class="link link-hover">Dental</a>
-        <a class="link link-hover">General Treatment</a>
+        <a class="link link-hover text-gray-300">Lab</a>
+        <a class="link link-hover text-gray-300">Dental</a>
+        <a class="link link-hover text-gray-300">General Treatment</a>
       </nav>
       <nav>
         <h6 class="footer-title">About us</h6>
-        <a class="link link-hover">Clinics</a>
-        <a class="link link-hover">Doctors</a>
+        <a class="link link-hover text-gray-300">Clinics</a>
+        <a class="link link-hover text-gray-300">Doctors</a>
       </nav>
       <nav>
         <h6 class="footer-title">Legal</h6>
-        <a class="link link-hover">Terms of use</a>
-        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover text-gray-300">Terms of use</a>
+        <a class="link link-hover text-gray-300">Privacy policy</a>
       </nav>
     </footer>
+    <script>
+      document.getElementById('menu-toggle').addEventListener('click', function() {
+        var mobileMenu = document.getElementById('mobile-menu');
+        mobileMenu.classList.toggle('hidden');
+      });
+    </script>
   </body>
 </html>
+

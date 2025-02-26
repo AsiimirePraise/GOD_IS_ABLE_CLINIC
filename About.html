@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GOD IS ABLE About</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="icon" href="/Assets/logo.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <link rel="stylesheet" href="/Styles/style.css">
+</head>
+<body class="bg-gray-50">
+  <header>
+    <nav class="fixed top-0 left-0 right-0 bg-gray-900 shadow-sm p-4 z-50">
+      <div class="max-w-7xl mx-auto flex items-center justify-between">
+        <div class="flex items-center gap-4">
+          <a href="./index.html" class="flex items-center">
+            <img
+              id="logo"
+              src="./Assets/logo.png"
+              alt="GOD IS ABLE CLINIC Logo"
+              class="h-20"
+            />
+          </a>
+          <a
+            href="./index.html"
+            class="text-2xl font-semibold text-gray-100 hover:text-primary transition-colors"
+          >
+            GOD IS ABLE
+            <span class="block text-xl text-gray-300">CLINIC</span>
+          </a>
+        </div>
+        <div class="lg:hidden">
+          <button id="menu-toggle" class="text-gray-100 focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div class="hidden lg:flex space-x-8">
+          <a href="./index.html" class="text-gray-300 hover:text-primary">HOME</a>
+          <div class="dropdown dropdown-hover">
+            <a href="./About.html" class="text-gray-300 hover:text-primary"
+              >ABOUT US</a
+            >
+            <ul
+              class="dropdown-content menu p-2 shadow bg-gray-800 rounded-box w-52"
+            >
+              <li>
+                <a href="./About.html#Vision" class="text-gray-300">Vision</a>
+              </li>
+              <li>
+                <a href="./About.html#Values" class="text-gray-300">Values</a>
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown dropdown-hover">
+            <a href="./Services.html" class="text-gray-300 hover:text-primary"
+              >SERVICES</a
+            >
+            <ul
+              class="dropdown-content menu p-2 shadow bg-gray-800 rounded-box w-52"
+            >
+              <li>
+                <a href="./Services.html#Dental" class="text-gray-300"
+                  >Dental</a
+                >
+              </li>
+              <li>
+                <a href="./Services.html#Lab" class="text-gray-300">Lab</a>
+              </li>
+              <li>
+                <a href="./Services.html#General" class="text-gray-300"
+                  >General Treatment</a
+                >
+              </li>
+            </ul>
+          </div>
+          <a href="./Contact.html" class="text-gray-300 hover:text-primary"
+            >CONTACT US</a
+          >
+        </div>
+      </div>
+      <div id="mobile-menu" class="lg:hidden hidden mt-4">
+        <a href="#" class="block py-2 text-gray-100 hover:text-primary"
+          >HOME</a
+        >
+        <a
+          href="./About.html"
+          class="block py-2 text-gray-100 hover:text-primary"
+          >ABOUT US</a
+        >
+        <a
+          href="./Services.html"
+          class="block py-2 text-gray-100 hover:text-primary"
+          >SERVICES</a
+        >
+        <a
+          href="./Contact.html"
+          class="block py-2 text-gray-100 hover:text-primary"
+          >CONTACT US</a
+        >
+      </div>
+    </nav>
+  </header>
+  <main class="relative min-h-screen pt-24">
+    <div
+      class="h-96 bg-cover bg-center flex items-center justify-center"
+      style="background-image: url('/Assets/happyPatient.jpg')"
+    >
+      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+      <div class="relative text-center z-10">
+        <h1 class="text-4xl font-bold text-white">About us</h1>
+      </div>
+    </div>
+    <div class="fixed right-4 top-40 bg-[#1a1f2e] rounded-lg shadow-lg p-6 w-64 z-40">
+      <div class="space-y-6">
+        <a href="tel:256 786733562 " class="block">
+          <div
+            class="flex items-center space-x-2 text-gray-300 hover:text-secondary"
+          >
+            <span>Call for the</span>
+          </div>
+          <span class="text-red-600 font-semibold text-lg">emergency</span>
+        </a>
+        <a
+          href="./BookLab.html"
+          class="block text-gray-300 hover:text-secondary"
+        >
+          <span>Book a Lab Test</span>
+        </a>
+        <a
+          href="./RequestAppointment.html"
+          class="block text-gray-300 hover:text-secondary"
+        >
+          <span>Request an appointment</span>
+        </a>
+      </div>
+    </div>
+    <section class="bg-gray-100 py-10" id="main">
+      <div class="lg:w-3/4 mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pt-10">
+          <div class="card bg-white shadow-md hover:shadow-lg transition-shadow">
+            <figure class="px-6 pt-6">
+              <div class="w-32 h-24 flex items-center justify-center rounded-lg bg-gray-100">
+                <img src="/Assets/yearOfOperation.png" alt="years of experience" />
+              </div>
+            </figure>
+            <div class="card-body items-center text-center">
+              <h3 class="card-title text-xl">10 years of experience</h3>
+            </div>
+          </div>
+
+          <div class="card bg-white shadow-md hover:shadow-lg transition-shadow">
+            <figure class="px-6 pt-6">
+              <div class="w-32 h-24 flex items-center justify-center rounded-lg bg-gray-100">
+                <img src="/Assets/clinic.png" alt="5 clinics" />
+              </div>
+            </figure>
+            <div class="card-body items-center text-center">
+              <h3 class="card-title text-xl">5 clinics</h3>
+            </div>
+          </div>
+
+          <div class="card bg-white shadow-md hover:shadow-lg transition-shadow">
+            <figure class="px-6 pt-6">
+              <div class="w-32 h-24 flex items-center justify-center rounded-lg bg-gray-100">
+                <img src="/Assets/client.jpeg" alt="1000+ happy patients" />
+              </div>
+            </figure>
+            <div class="card-body items-center text-center">
+              <h3 class="card-title text-xl">1000+ happy patients</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full my-8">
+          <hr class="border-t-2 border-primary" />
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div class="card bg-white shadow-md hover:shadow-lg transition-shadow">
+            <figure class="px-6 pt-6">
+              <div class="w-32 h-24 flex items-center justify-center rounded-lg bg-gray-100">
+                <img src="/Assets/bed.png" alt="50 admission beds" />
+              </div>
+            </figure>
+            <div class="card-body items-center text-center">
+              <h3 class="card-title text-xl">50 Admission beds</h3>
+            </div>
+          </div>
+
+          <div class="card bg-white shadow-md hover:shadow-lg transition-shadow">
+            <figure class="px-6 pt-6">
+              <div class="w-32 h-24 flex items-center justify-center rounded-lg bg-gray-100">
+                <img src="/Assets/state.png" alt="state-of-the-art facilities" />
+              </div>
+            </figure>
+            <div class="card-body items-center text-center">
+              <h3 class="card-title text-xl">State-of-the-art facilities</h3>
+            </div>
+          </div>
+
+          <div class="card bg-white shadow-md hover:shadow-lg transition-shadow">
+            <figure class="px-6 pt-6">
+              <div class="w-32 h-24 flex items-center justify-center rounded-lg bg-gray-100">
+                <img src="/Assets/lab.png" alt="excellent patient care" />
+              </div>
+            </figure>
+            <div class="card-body items-center text-center">
+              <h3 class="card-title text-xl">Well equipped laboratories</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Vision" class="bg-white py-10">
+      <div class="max-w-4xl mx-auto p-8 flex flex-col md:flex-row items-center gap-8">
+        <div class="mb-12 md:w-1/2">
+          <h2 class="text-2xl font-semibold flex items-center gap-3 mb-4 text-primary">
+            Our vision
+          </h2>
+          <blockquote class="blockquote border-l-4 border-primary pl-4">
+            <p class="text-primary italic">
+              "To be a beacon of holistic healing and spiritual wellness,
+              where every visitor finds guidance, comfort, and support on
+              their journey to health."
+            </p>
+          </blockquote>
+        </div>
+        <div class="mb-12 md:w-1/2">
+          <h2 class="text-2xl font-semibold mb-4 text-primary">Our Mission</h2>
+          <blockquote class="blockquote border-l-4 border-primary pl-4">
+            <p class="text-primary italic">
+              "Our mission is to provide compassionate and holistic healthcare
+              by integrating modern medical practices with healing. We are
+              dedicated to promoting health and well-being through
+              personalized care, empowering individuals to achieve optimal
+              health in body, mind, and spirit."
+            </p>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="Values" class="bg-gray-100 py-10">
+      <div class="max-w-4xl mx-auto p-8">
+        <div class="flex items-center gap-2 mb-8">
+          <h2 class="text-3xl font-bold text-primary">OUR VALUES</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="card bg-white shadow-xl">
+            <div class="card-body">
+              <div class="flex items-start gap-4">
+                <div class="w-16 h-16">
+                  <img src="/placeholder.svg" alt="" />
+                </div>
+                <div>
+                  <h3 class="card-title mb-2 text-primary">Medical Expertise</h3>
+                  <p class="text-sm">
+                    We only employ the most qualified medical personnel, use
+                    cutting-edge technology and equipment, and adhere to
+                    strict safety and cleanliness standards.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-white shadow-xl">
+            <div class="card-body">
+              <div class="flex items-start gap-4">
+                <div class="w-16 h-16">
+                  <img src="/placeholder.svg" alt="" />
+                </div>
+                <div>
+                  <h3 class="card-title mb-2 text-primary">Caring</h3>
+                  <p class="text-sm">
+                    We are always here to support our patients on their
+                    journey to wellness, and our team will always go the extra
+                    mile to make sure they feel cared for and comfortable.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-white shadow-xl">
+            <div class="card-body">
+              <div class="flex items-start gap-4">
+                <div class="w-16 h-16">
+                  <img src="/placeholder.svg" alt="" />
+                </div>
+                <div>
+                  <h3 class="card-title mb-2 text-primary">Innovative</h3>
+                  <p class="text-sm">
+                    We believe in progress and excellence, that is why we are
+                    constantly innovating and expanding our services.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-white shadow-xl">
+            <div class="card-body">
+              <div class="flex items-start gap-4">
+                <div class="w-16 h-16">
+                  <img src="/placeholder.svg" alt="" />
+                </div>
+                <div>
+                  <h3 class="card-title mb-2 text-primary">Transparent</h3>
+                  <p class="text-sm">
+                    We treat all patients as if they are family or friend. We
+                    will treat them with the same dedication and commitment we
+                    would invest on those closest to us.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="staff bg-gray-100 py-10" id="Doctors">
+      <div class="container mx-auto">
+        <h2 class="text-2xl font-semibold text-center text-gray-800 mb-8">
+          Our Doctors
+        </h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+          <div class="card bg-white shadow-xl">
+            <figure class="px-6 pt-6">
+              <img
+                src="/Assets/doctor1.jpg"
+                alt="Dr. Lillian Kaliisa"
+                class="rounded-full w-48 h-48 object-cover"
+              />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Dr.Peter Tumukunde</h2>
+              <div class="card-actions">
+                <button class="btn bg-blue-600 text-white hover:bg-blue-700">
+                  View Profile
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-white shadow-xl">
+            <figure class="px-6 pt-6">
+              <img
+                src="/Assets/dr.Thierry Nshimirimana.jpeg"
+                alt="Dr. Thierry Nshimirimana"
+                class="rounded-full w-48 h-48 object-cover"
+              />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Dr. Thierry Nshimirimana</h2>
+              <div class="card-actions">
+                <button class="btn bg-blue-600 text-white hover:bg-blue-700">
+                  View Profile
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-white shadow-xl">
+            <figure class="px-6 pt-6">
+              <img
+                src="/Assets/dr.Rosette Katongole.jpg"
+                alt="Dr. Rosette Katongole"
+                class="rounded-full w-48 h-48 object-cover"
+              />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Dr. Rosette Katongole</h2>
+              <div class="card-actions">
+                <button class="btn bg-blue-600 text-white hover:bg-blue-700">
+                  View Profile
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-white shadow-xl">
+            <figure class="px-6 pt-6">
+              <img
+                src="/Assets/doctor1.jpg"
+                alt="Dr. Lillian Kaliisa"
+                class="rounded-full w-48 h-48 object-cover"
+              />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Dr.Peter Tumukunde</h2>
+              <div class="card-actions">
+                <button class="btn bg-blue-600 text-white hover:bg-blue-700">
+                  View Profile
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-white shadow-xl">
+            <figure class="px-6 pt-6">
+              <img
+                src="/Assets/dr.Thierry Nshimirimana.jpeg"
+                alt="Dr. Thierry Nshimirimana"
+                class="rounded-full w-48 h-48 object-cover"
+              />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Dr. Thierry Nshimirimana</h2>
+              <div class="card-actions">
+                <button class="btn bg-blue-600 text-white hover:bg-blue-700">
+                  View Profile
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-white shadow-xl">
+            <figure class="px-6 pt-6">
+              <img
+                src="/Assets/dr.Rosette Katongole.jpg"
+                alt="Dr. Rosette Katongole"
+                class="rounded-full w-48 h-48 object-cover"
+              />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Dr. Rosette Katongole</h2>
+              <div class="card-actions">
+                <button class="btn bg-blue-600 text-white hover:bg-blue-700">
+                  View Profile
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer bg-[#1a1f2e] text-white p-10">
+    <aside>
+      <img
+        src="/Assets/client.jpeg"
+        alt="logo"
+        width="100"
+        height="100"
+        class="rounded-full"
+      />
+      <p class="font-bold">
+        GOD IS ABLE CLINICS
+        <br />
+        We treat, God heals
+      </p>
+    </aside>
+    <nav>
+      <h6 class="footer-title">Services</h6>
+      <a class="link link-hover text-gray-300">Lab</a>
+      <a class="link link-hover text-gray-300">Dental</a>
+      <a class="link link-hover text-gray-300">General Treatment</a>
+    </nav>
+    <nav>
+      <h6 class="footer-title">About us</h6>
+      <a class="link link-hover text-gray-300">Clinics</a>
+      <a class="link link-hover text-gray-300">Doctors</a>
+    </nav>
+    <nav>
+      <h6 class="footer-title">Legal</h6>
+      <a class="link link-hover text-gray-300">Terms of use</a>
+      <a class="link link-hover text-gray-300">Privacy policy</a>
+    </nav>
+  </footer>
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+      var mobileMenu = document.getElementById('mobile-menu');
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
+

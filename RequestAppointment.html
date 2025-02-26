@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GOD IS ABLE bookLab</title>
+    <link rel="icon" href="/Assets/logo.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="./style.css">
+    <style>
+      body {
+        background-color: #f5f7fa;
+      }
+    </style>
+    <body class="bg-gray-50">
+      <header>
+        <nav class="fixed top-0 left-0 right-0 bg-gray-900 shadow-sm p-4 z-50">
+          <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <div class="flex items-center gap-4">
+              <a href="./index.html" class="flex items-center">
+                <img
+                  id="logo"
+                  src="./Assets/logo.png"
+                  alt="GOD IS ABLE CLINIC Logo"
+                  class="h-20"
+                />
+              </a>
+              <a
+                href="./index.html"
+                class="text-2xl font-semibold text-gray-100 hover:text-primary transition-colors"
+              >
+                GOD IS ABLE
+                <span class="block text-xl text-gray-300">CLINIC</span>
+              </a>
+            </div>
+            <div class="lg:hidden">
+              <button id="menu-toggle" class="text-gray-100 focus:outline-none">
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16m-7 6h7"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div class="hidden lg:flex space-x-8">
+              <a href="./index.html" class="text-gray-300 hover:text-primary">HOME</a>
+              <div class="dropdown dropdown-hover">
+                <a href="./About.html" class="text-gray-300 hover:text-primary"
+                  >ABOUT US</a
+                >
+                <ul
+                  class="dropdown-content menu p-2 shadow bg-gray-800 rounded-box w-52"
+                >
+                  <li>
+                    <a href="./About.html#Vision" class="text-gray-300">Vision</a>
+                  </li>
+                  <li>
+                    <a href="./About.html#Values" class="text-gray-300">Values</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="dropdown dropdown-hover">
+                <a href="./Services.html" class="text-gray-300 hover:text-primary"
+                  >SERVICES</a
+                >
+                <ul
+                  class="dropdown-content menu p-2 shadow bg-gray-800 rounded-box w-52"
+                >
+                  <li>
+                    <a href="./Services.html#Dental" class="text-gray-300"
+                      >Dental</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./Services.html#Lab" class="text-gray-300">Lab</a>
+                  </li>
+                  <li>
+                    <a href="./Services.html#General" class="text-gray-300"
+                      >General Treatment</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <a href="./Contact.html" class="text-gray-300 hover:text-primary"
+                >CONTACT US</a
+              >
+            </div>
+          </div>
+          <div id="mobile-menu" class="lg:hidden hidden mt-4">
+            <a href="#" class="block py-2 text-gray-100 hover:text-primary"
+              >HOME</a
+            >
+            <a
+              href="./About.html"
+              class="block py-2 text-gray-100 hover:text-primary"
+              >ABOUT US</a
+            >
+            <a
+              href="./Services.html"
+              class="block py-2 text-gray-100 hover:text-primary"
+              >SERVICES</a
+            >
+            <a
+              href="./Contact.html"
+              class="block py-2 text-gray-100 hover:text-primary"
+              >CONTACT US</a
+            >
+          </div>
+        </nav>
+      </header>
+    
+    <main class="container mx-auto px-4 py-24 pt-32">
+      <div class="card bg-gray-50 shadow-lg p-8 max-w-3xl mx-auto border border-gray-100">
+        <div class="flex justify-between items-center mb-6">
+          <h2 class="text-2xl font-semibold text-gray-800">Book Appointment</h2>
+          <div class="form-control">
+            <label class="label cursor-pointer">
+              <span class="label-text mr-2">Are You A Registered Patient?</span>
+              <input type="checkbox" class="checkbox checkbox-primary" />
+            </label>
+          </div>
+        </div>
+
+        <form class="space-y-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text font-medium">Mobile Number*</span>
+              </label>
+              <input
+                type="tel"
+                placeholder="Enter Your Mobile Number e.g 2067123456789"
+                class="input input-bordered bg-white focus:border-primary"
+              />
+            </div>
+
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text font-medium">First Name*</span>
+              </label>
+              <input
+                type="text"
+                placeholder="First Name"
+                class="input input-bordered bg-white focus:border-primary"
+              />
+            </div>
+          </div>
+
+          <div class="form-control">
+            <label class="label">
+              <span class="label-text font-medium">Last Name*</span>
+            </label>
+            <input
+              type="text"
+              placeholder="Last Name"
+              class="input input-bordered bg-white focus:border-primary"
+            />
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text font-medium">Service*</span>
+              </label>
+              <select class="select select-bordered bg-white focus:border-primary">
+                <option disabled selected>Select Service</option>
+                <option value="dental">Dental</option>
+                <option value="lab test">Lab Test</option>
+                <option value="general treatment">General Treatment</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-control">
+            <label class="label">
+              <span class="label-text font-medium">Select Doctor*</span>
+            </label>
+            <select class="select select-bordered bg-white focus:border-primary">
+              <option disabled selected>Select Doctor</option>
+              <option value="Dr. Peter Tumukunde">Dr. Peter Tumukunde</option>
+              <option value="Dr. Rosette Katongole">Dr. Rosette Katongole</option>
+              <option value="Dr. Thierry Nshimirimana">Dr. Thierry Nshimirimana</option>
+            </select>
+          </div>
+
+          <div class="form-control">
+            <label class="label">
+              <span class="label-text font-medium">Appointment Date*</span>
+            </label>
+            <input type="date" class="input input-bordered bg-white focus:border-primary" />
+          </div>
+
+          <div class="form-control">
+            <label class="label">
+              <span class="label-text font-medium">Available Slots</span>
+            </label>
+            <div class="bg-gray-100 p-4 rounded-lg text-center text-gray-600">
+              No time slots found.
+            </div>
+          </div>
+
+          <div class="flex justify-center mt-6">
+            <button class="btn btn-primary px-8 text-white">Confirm Booking</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer class="bg-gray-800 text-gray-100">
+      <div class="container mx-auto p-10 grid grid-cols-1 md:grid-cols-4 gap-8">
+        <aside>
+          <img
+            src="/Assets/client.jpeg"
+            alt="logo"
+            width="100"
+            height="100"
+            class="rounded-full border-4 border-gray-700"
+          />
+          <p class="font-bold mt-4">
+            GOD IS ABLE CLINICS
+            <br />
+            <span class="text-gray-400">We treat, God heals</span>
+          </p>
+        </aside>
+        <nav>
+          <h6 class="text-lg font-semibold mb-4">Services</h6>
+          <ul class="space-y-2">
+            <li><a class="hover:text-primary transition-colors">Lab</a></li>
+            <li><a class="hover:text-primary transition-colors">Dental</a></li>
+            <li><a class="hover:text-primary transition-colors">General Treatment</a></li>
+          </ul>
+        </nav>
+        <nav>
+          <h6 class="text-lg font-semibold mb-4">About us</h6>
+          <ul class="space-y-2">
+            <li><a class="hover:text-primary transition-colors">Clinics</a></li>
+            <li><a class="hover:text-primary transition-colors">Doctors</a></li>
+          </ul>
+        </nav>
+        <nav>
+          <h6 class="text-lg font-semibold mb-4">Legal</h6>
+          <ul class="space-y-2">
+            <li><a class="hover:text-primary transition-colors">Terms of use</a></li>
+            <li><a class="hover:text-primary transition-colors">Privacy policy</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
